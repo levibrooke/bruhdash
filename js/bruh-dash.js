@@ -10,69 +10,69 @@ var global = window || GLOBAL;
 global.bruhdash = {
 
   // returns the first element of an array
-  first: function () {
-      
+  first: function (arr) {
+    return _.first(arr);
   },
 
   // returns the last element of an array
-  last: function () {
-
+  last: function (arr) {
+    return _.last(arr);
   },
 
   // returns the index of the first matching element from left to right
-  indexOf: function () {
-
+  indexOf: function (arr, num) {
+    return _.indexOf(arr, num);
   },
 
   // returns the index of the first matching element from right to left
-  lastIndexOf: function () {
-
+  lastIndexOf: function (arr, num) {
+    return _.lastIndexOf(arr, num);
   },
 
   // returns an array with all elements except for the last element
-  initial: function () {
-
+  initial: function (arr) {
+    return _.initial(arr);
   },
-  
-  // returns an array with all falsey values removed
-  compact: function() {
 
+  // returns an array with all falsey values removed
+  compact: function(arr) {
+    return _.compact(arr);
   },
 
   // creates a slice of an array from the start index up to but not including the end index
-  slice: function () {
-
+  slice: function (arr, start, end) {
+    return _.slice(arr, start, end);
   },
 
   // returns a slice of array with n elements dropped from the beignning
-  drop: function(){
-
+  drop: function(arr, n){
+    return _.drop(arr, n);
   },
 
   // returns a slice of array with n elements dropped from the end
-  dropRight: function() {
-
+  dropRight: function(arr, n) {
+    return _.dropRight(arr, n);
   },
 
   // creates a slice of an array with n elements taken from the beginning
-  take: function () {
-
+  take: function (arr, n) {
+    return _.take(arr, n);
   },
 
   // creates a slice of an array with n elements taken from the end
-  takeRight: function () {
-
+  takeRight: function (arr, n) {
+    return _.takeRight(arr, n);
   },
 
   // fills elements of array with specified value from the start index
   // up to but not including the end index
-  fill: function() {
-
+  fill: function(arr, value, start, end) {
+    return _.fill(arr, value, start, end);
   },
 
   // removes all given values from an array
-  pull: function () {
-
+  pull: function(arr, values) {
+    return _.pull(arr, values);
   },
 
   // removes elements of an array corresponding to the given indices
@@ -92,7 +92,7 @@ global.bruhdash = {
 
   /*******************
    *  STRETCH GOALS! *
-   *******************/ 
+   *******************/
 
   // creates an array of grouped elements
   zip: function () {
@@ -123,7 +123,7 @@ global.bruhdash = {
 
   /*************************
    *  SUPER STRETCH GOALS!  *
-   *************************/ 
+   *************************/
 
   // iterates over elements of a collection and returns all elements that the predicate returns truthy for
   // Note: this should work for arrays and objects
@@ -135,6 +135,6 @@ global.bruhdash = {
   // in the collection through an iteratee
   // Note: this should work for arrays and objects
   reduce: function() {
-    
+
   }
 };

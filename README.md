@@ -1,7 +1,7 @@
 # bruhdash
 bruhdash is an exercise in more advanced JavaScript Array scenarios using the basics Array methods that you have already learned.
 
-_It is your job to implment your first library. Bruh._
+_It is your job to implement your first library. Bruh._
 
 ###Setup:
 
@@ -12,7 +12,7 @@ You will need to do your work in the browser by starting live-server in your ter
 
 `$ live-server`
 
-...which will allow you to use your browser to load your libary at [http://localhost:8080](http://localhost:8080)
+...which will allow you to use your browser to load your library at [http://localhost:8080](http://localhost:8080)
 
 
 ###Workflow
