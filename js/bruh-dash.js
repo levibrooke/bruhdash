@@ -71,23 +71,25 @@ global.bruhdash = {
   },
 
   // removes all given values from an array
-  pull: function(arr, values) {
-    return _.pull(arr, values);
+  pull: function(arr, a, b) {
+    var remove = _.pull(arr, a, b);
+    return arr;
   },
 
   // removes elements of an array corresponding to the given indices
-  pullAt: function () {
-
+  pullAt: function(arr, indexes) {
+    var pulled = _.pullAt(arr, indexes);
+    return arr;
   },
 
   // creates an array excluding all the specified values
-  without: function() {
-
+  without: function(arr, a, b) {
+    return _.without(arr, a, b);
   },
 
   // returns an array with specified values excluded
-  difference: function() {
-
+  difference: function(arr, values) {
+    return _.difference(arr, values);
   },
 
   /*******************
