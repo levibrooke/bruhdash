@@ -83,8 +83,8 @@ global.bruhdash = {
   },
 
   // creates an array excluding all the specified values
-  without: function(arr, a, b) {
-    return _.without(arr, a, b);
+  without: function(arr, exclude) {
+    return _.without(arr, exclude);
   },
 
   // returns an array with specified values excluded
@@ -97,24 +97,30 @@ global.bruhdash = {
    *******************/
 
   // creates an array of grouped elements
-  zip: function () {
-
+  zip: function (arr1, arr2) {
+    return _.zip(arr1, arr2);
   },
 
   // creates an array of grouped elements in their pre-zip configuration
-  unzip: function () {
-
+  unzip: function (arr1, arr2) {
+    return _.unzip(arr1, arr2);
   },
 
   // creates an array of elements into groups of length of specified size
-  chunk: function(){
-
+  chunk: function(arr, size){
+    return _.chunk(arr, size);
   },
 
   // iterates over elements of a collection and invokes iteratee for each element
   // Note: this should work for arrays and objects
-  forEach: function() {
 
+  forEach: function(collection) {
+    var newCollection = [];
+    _.forEach(collection, function(item, index) {
+      console.log(item);
+      newCollection.push(item);
+      return newCollection;
+    });
   },
 
   // creates an array of values by running each element in collection thru the iteratee
